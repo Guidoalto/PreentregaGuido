@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoVentas - Tu concesionario de confianza</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem;
+        }
+
+        nav {
+            background-color: #34495e;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hero {
+            height: 400px;
+            background-color: #ecf0f1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .featured-cars {
+            padding: 2rem;
+        }
+
+        .car-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 1rem;
+        }
+
+        .car-card {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AutoVentas</h1>
+        <p>Tu concesionario de confianza</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#catalogo">Catálogo</a></li>
+            <li><a href="#nuevos">Autos Nuevos</a></li>
+            <li><a href="#usados">Autos Usados</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div>
+                <h2>Encuentra tu auto ideal</h2>
+                <p>Gran variedad de marcas y modelos disponibles</p>
+            </div>
+        </section>
+
+        <section class="featured-cars">
+            <h2>Vehículos Destacados</h2>
+            <div class="car-grid">
+                <article class="car-card">
+                    <img src="/api/placeholder/300/200" alt="Auto 1">
+                    <h3>Toyota Corolla 2024</h3>
+                    <p>Nuevo modelo con características premium</p>
+                    <p class="price">$25,000</p>
+                    <button>Ver detalles</button>
+                </article>
+
+                <article class="car-card">
+                    <img src="/api/placeholder/300/200" alt="Auto 2">
+                    <h3>Honda Civic 2024</h3>
+                    <p>Deportivo y económico</p>
+                    <p class="price">$23,500</p>
+                    <button>Ver detalles</button>
+                </article>
+
+                <article class="car-card">
+                    <img src="/api/placeholder/300/200" alt="Auto 3">
+                    <h3>Ford Mustang 2024</h3>
+                    <p>Potencia y estilo</p>
+                    <p class="price">$45,000</p>
+                    <button>Ver detalles</button>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h2>Contacta con nosotros</h2>
+            <form>
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" required></textarea>
+                </div>
+                <button type="submit">Enviar consulta</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <h3>AutoVentas</h3>
+            <p>Dirección: Av. Principal 123</p>
+            <p>Teléfono: (123) 456-7890</p>
+            <p>Email: info@autoventas.com</p>
+        </div>
+    </footer>
+</body>
+</html>
